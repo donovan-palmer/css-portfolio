@@ -4,111 +4,185 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donovan Palmer, About Me</title>
+    <link href="https://fonts.googleapis.com/
+    css2?family=Caveat&family=Montserrat:wght@400;600&display=swap" 
+    rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css"
-  
   </head>
+
   <body>
     <main>
       <!-- ***********************  ABOUT / PROFILE  *********************** -->
       <header>
-        <h1>Donovan Palmer</h1>
-        <h2>Seeking Engineering Employment</h2>
+        <div class="content-wrap">
+          <h1>Donovan Palmer</h1>
+          <h2>Seeking Engineering Employment</h2>
 
-        <p>I am a recent graduate from Trinity College in Hartford CT, with a dual degree in Physics and Mechanical Engineering. I am looking to explore my passions for engineering 
-          in a full time role at a company that believes in striving for technological advancement in whatever form that may take on.
-        </p>
-        <p>Altogether, I am a quick learner with grit and intentionality. For a more detailed look about me, check out my <a href="https://www.linkedin.com/in/donovan-palmer/"
-          target="_blank">LinkedIn profile</a>.
-        </p>
+          <p>I am a recent graduate from Trinity College in Hartford CT, with a dual degree in Physics and Mechanical Engineering. I am looking to explore my passions for engineering 
+            in a full time role at a company that believes in striving for technological advancement in whatever form that may take on.
+          </p>
+        </div>
       </header>
 
       <!-- ********************  PROJECTS / PORTFOLIO  ********************* -->
-      <section>
-        <h2>Featured Projects</h2>
-        <p>View selected projects below. A more detailed look at each project can be found at <a href="https://sites.google.com/view/donovan-palmer">donovan-palmer</a>.</p>
+      <section class="projects">
 
-        <!-- Copy the whole <section> block to add more projects. -->
-        <section>
-          <h3>Undergraduate Engineering Research, Texas A&M University (Summer 2018)</h3>
-          <img src="images/research/tamu.png" alt="Building at Texas A&M University">
-          <p>Worked in a graduate and post-doctorate Turbomachinery laboratory to investigate the combustion kinetics of Sarin simulants through shock tube experimentation. 
-            Awarded 1st place at the summer symposium for best research poster and presentation.
-            </p>
-          <a href="https://sites.google.com/view/donovan-palmer/research/texas-am-university" target="_blank">View research experience</a>
-        </section>
-       
-      </section>
+        <div class="content-wrap divider">
+          <h2>Featured Projects</h2>
+          <p>View selected projects below. A more detailed look at each project can be found at <a href="https://sites.google.com/view/donovan-palmer">donovan-palmer</a>.</p>
+          
+          <!-- Project 1 -->
+          <section class="project-item">
+            <img src="images/research/tamu.png" alt="Building at Texas A&M University">
+            <h3>Undergraduate Engineering Research, Texas A&M University</h3>
+            <p>Summer 2018</p>
+            <p>Worked in a graduate and post-doctorate Turbomachinery laboratory to investigate the combustion kinetics of Sarin simulants through shock tube experimentation. 
+              Awarded 1st place at the summer symposium for best research poster and presentation.
+              </p>
+            <a class="btn" href="https://sites.google.com/view/donovan-palmer/research/texas-am-university" target="_blank">View research experience</a>
+          </section>
+
+          <!-- Project 2 -->
+          <section class="project-item">
+            <img src="images/research/1450-202.jpg" alt="Aerial view of Trinity College in Hartford Connecticut">
+            <h3>Undergraduate Engineering Research, Trinity College</h3>
+            <p>Summer 2017 - Spring 2019</p>
+            <p>Modeled the combustion of Sarin simulants using chemical kinetics software (i.e. Cantera / CHEMKIN) to validate reaction mechanisms in literature
+              </p>
+            <a class="btn" href="https://sites.google.com/view/donovan-palmer/research/trinity-college" target="_blank">View research experience</a>
+          </section>
+          
+          <!-- Project 3 -->
+          <section class="project-item">
+            <img src="images/robotics/cara-actual.jpg" alt="=Senior Capstone -- Autonomous Unmanned Ground Vehicle">
+            <h3>Robotics</h3>
+            <p>Fall 2019 - Spring 2020</p>
+            <p>The original aim of this project was to design and build a robot capable of autonomous payload retrieval and delivery within a hallway. 
+              Although it was stopped short due to COVID-19 ending my senior year, this project had many successes such as creating a 
+              Robot Operating System (ROS) compatible electro-mechanical design capable of teleoperation, preliminary 
+              environment mapping, PID motor control, fusion of inertial measurement unit data, and even encoder odometry.
+              </p>
+            <a class="btn" href="https://sites.google.com/view/donovan-palmer/projects/robotics" target="_blank">View project</a>
+          </section>
+          
+          <!-- Project 4 -->
+          <section class="project-item">
+            <img src="images/airfoil/subsonic-simulated.jpg" alt="=Airfoil Investigations">
+            <h3>Airfoil Theory</h3>
+            <p>Fall 2017 - Fall 2018</p>
+            <p>A look into simulating subsonic fluid flow over a variety of different airfoils in COMSOL. 
+              An investigation of conformal mapping theory was performed and its predictions were compared to 
+              experimental results from a wind tunnel test over a 3D printed airfoil.</p>
+            <a class="btn" href="https://sites.google.com/view/donovan-palmer/projects/airfoil-theory" target="_blank">View project</a>
+          </section>
       
-        <section>
-          <h3>Undergraduate Engineering Research, Trinity College (Summer 2017 - Spring 2019)</h3>
-          <img src="images/research/1450-202.jpg" alt="Aerial view of Trinity College in Hartford Connecticut">
-          <p>Modeled the combustion of Sarin simulants using chemical kinetics software (i.e. Cantera / CHEMKIN) to validate reaction mechanisms in literature
-            </p>
-          <a href="https://sites.google.com/view/donovan-palmer/research/trinity-college" target="_blank">View research experience</a>
-        </section>
-   
-
-      <section>
-        <h3>Robotics</h3>
-        <img src="images/robotics/cara-actual.jpg" alt="=Senior Capstone -- Autonomous Unmanned Ground Vehicle">
-        <p>The original aim of this project was to design and build a robot capable of autonomous payload retrieval and delivery within a hallway. Although it was 
-          stopped short due to COVID-19 ending my senior year, this project had many successes such as creating a Robot Operating System (ROS) compatible electro-mechanical design capable of teleoperation, preliminary 
-          environment mapping, PID motor control, fusion of inertial measurement unit data, and even encoder odometry.
-           </p>
-        <a href="https://sites.google.com/view/donovan-palmer/projects/robotics" target="_blank">View project</a>
+        </div>
       </section>
-      <!-- End of Project block. -->
-    </section>
 
 
       <!-- ***********************  WORK EXPERIENCE  *********************** -->
-      <section>
-        <h2>Work Experience</h2>
-        <p>Optional paragraph for work experience summary. Not a part of the job details. Delete if not being used.</p>
+      <section class="work-experience">
+        <div class="content-wrap item-details divider">
+          <h2>Work Experience</h2>
 
-        <!-- Copy this whole <section> block to add more jobs. -->
-        <section>
-          <h3>Job title</h3>
-          <p>Company Name</p>
-          <p>Date at job</p>
-          <p>Job summary goes here. Add as many paragraphs as you need.</p>
-          <p>Optional list:</p>
-          <ul>
-            <li>Delete this list if you don't need it.</li>
-            <li>Created...</li>
-            <li>Lead...</li>
-            <li>Responsible for...</li>
-          </ul>
-        </section>
-        <!-- End of Job block. -->
+          <!-- Job 1 -->
+          <section class="job-item">
+            <div class="job-details">
+              <h3>Advanced Manufacturing Software Engineering Intern</h3>              
+              <p>May 2019 - August 2019</p>
+              <a class="btn" href="https://www.paperlessparts.com/" 
+              target="_blank"> Paperless Parts</a>
+            </div>
+            <div class="job-summary">
+              <p>Paperless Parts is the secure, ITAR registered and compliant cloud-based platform that is revolutionizing manufacturing.</p>
+              <ul>
+                <li>Geometrically interrogated 3D files through the FreeCAD Python console to aid manufacturing</li>
+                <li>Queried relational databases using SQL to aid business analytics and consulting</li>
+                <li>Developed strong technical and communication skills in an agile (scrum) start-up environment</li>
+              </ul>
+          </div>
+          </section>
+
+          <!-- Job 2 -->
+          <section class="job-item">
+            <div class="job-details">
+              <h3>Student Admissions Associate</h3>              
+              <p>August 2019 - July 2020</p>
+              <a class="btn" href="https://www.trincoll.edu/admissions/get-to-know-us/student-admissions-associates/" 
+              target="_blank"> Trinity College Admissions Office</a>
+            </div>
+            <div class="job-summary">
+              <p>Trinity College is a selective private liberal arts institution located in Hartford Connecticut. As an admissions associate for the college,
+                I was responsible for the following:</p> 
+              <ul>
+                <li>Conducted several hundred student interviews to assess prospective applicants (10 times per week)</li>
+                <li>Presented college metrics and experiences to an audience of 50+ (3 times per week)</li>
+              </ul>  
+            </div>    
+          </section>
+          
+          <!-- Job 3 -->
+          <section class="job-item">
+            <div class="job-details">
+              <h3>Barista</h3>              
+              <p>September 2017 - March 2020</p>
+              <a class="btn" href="https://www.trincoll.edu/coffee-on-campus-peter-bs-espresso-and-the-underground-coffeehouse/"
+              target="_blank"> Peter B's Espresso</a>
+            </div>  
+            <div class="job-summary">
+              <p>Located on the campus of Trinity College at Raether Library, this small coffee shop fuels students, faculty, and staff alike.</p>
+              <ul>
+                <li>Prepare and serve specialty and non-specialty beverages to customers</li>
+                <li>Sanitize workplace</li>
+              </ul>
+            </div>
+          </section>
+        </div>
       </section>
 
       <!-- ******************  EDUCATION & CERTIFICATIONS ****************** -->
-      <section>
-        <h2>Education</h2>
+      <section class="education">
+        <div class="content-wrap item-details">
 
-        <!-- Copy this whole <section> block to add more schools. -->
-        <section>
-          <h3>School name - City</h3>
-          <p>Designation received or program name, year attended</p>
-          <p>Summary or accomplishments.</p>
-        </section>
-        <!-- End of School block. -->
+          <h2>Education</h2>
+
+          <!-- Copy this whole <section> block to add more schools. -->
+          <section>
+            <h3>Trinity College</h3>
+            <p>B.S in Mechanical Engineering & Physics, 2016-2020<p>
+            <p><b>GPA:</b> 4.09/4.00 <i>(Summa Cum Laude)</i></p>
+            <p><b>Honors/Awards</b></p>
+            <ul>
+              <li>Presidential Scholarship (full-tuition, merit-based)</li>
+              <li>Phi Beta Kappa Honor Society</li>
+              <li>Junior & Senior Physics Prizes (awarded to top performing junior and senior physics major)</li>
+              <li>Junior & Senior Engineering Prizes (awarded to top performing junior and senior engineering major)</li>
+              <li>NASA CTSGC Undergraduate Scholarship (2017 & 2019)</li>
+              <li>NASA CTSGC Project Grant (2019)</li>
+            </ul>
+            <p><b>Relevant Coursework:</b>  Quantum Mechanics, Classical Mechanics, Electrodynamics, Statistical & Thermal Physics, Differential Eqns, Multivar Calculus, Automatic Control Systems, 
+              Materials Science, Mechanics of Materials, Fluid Mechanics, Linear Circuit Theory, Heat Transfer, Experimental Methods and Design, Audio Engineering.
+            </p>
+          </section>
+        </div>
       </section>
 
       <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
       <footer>
-        <h2>Let's Keep in Touch!</h2>
+        <div class="content-wrap">
+          <h2>Let's Keep in Touch!</h2>
 
-        <!-- Social media and contact links. Add or remove any networks. -->
-        <ul>
-          <li><a href="mailto:email@example.com">email@example.com</a></li>
-          <li><a href="http://yourwebsite.com" target="_blank">yourwebsite.com</a></li>
-          <li><a href="#" target="_blank">Twitter</a></li>
-          <li><a href="#" target="_blank">LinkedIn</a></li>
-          <li><a href="#" target="_blank">Facebook</a></li>
-        </ul>
+          <!-- Social media and contact links. Add or remove any networks. -->
+          <ul class="contact-list">
+            <li><a href="mailto:email@example.com">email@example.com</a></li>
+            <li><a href="http://yourwebsite.com" target="_blank">yourwebsite.com</a></li>
+            <li><a href="#" target="_blank">Twitter</a></li>
+            <li><a href="https://www.linkedin.com/in/donovan-palmer/" target="_blank">LinkedIn</a></li>
+            <li><a href="#" target="_blank">Facebook</a></li>
+          </ul>
+        </div>
       </footer>
+      
     </main>
   </body>
 </html>
