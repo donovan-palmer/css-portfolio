@@ -22,7 +22,7 @@ img {
 }
 
 a {
-    color: yellow;
+    color: orange;
 }
 
 a:hover {
@@ -45,10 +45,12 @@ h1, h2 {
 } 
 
 .content-wrap {
-    width: 800px;
+    max-width: 800px;
+    width: 85%;
     margin: 0 auto;
     padding: 60px 0;
 }
+
 
 .item-details h3 + p {
     font-style: italic;
@@ -68,7 +70,10 @@ h1, h2 {
 header {  
     background: #2F3061;
     color: #F7FFF7;
-    text-align: center;
+}
+
+header h1 {
+    color: orange;
 }
 
 /* Projects
@@ -82,7 +87,7 @@ header {
 }
 
 .projects .btn {
-    color: #F7FFF7;
+    color: orange;
     background: #2F3061;
     padding: 8px;
     border-radius: 4px;
@@ -97,11 +102,6 @@ header {
     overflow: hidden;
 }
 
-.project-item img {
-    float: left;
-    margin-right: 20px;
-}
-
 .project-item h3 {
     margin-top: 0;
     text-align: left;
@@ -114,12 +114,6 @@ header {
     background: #A1C6D7;
 }
 
-.job-item {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    column-gap: 25px;
-}
-
 .job-item h3 {
     text-align: left;
 }
@@ -129,7 +123,7 @@ header {
 }
 
 .work-experience .btn {
-    color: yellow;
+    color: orange;
     background: #2F3061;
     padding: 8px;
     border-radius: 4px;
@@ -146,24 +140,68 @@ header {
 
 /* Education
 --------------------------------------*/
+.education {
+    background-image: url(../images/education/joanna-kosinska-unsplash.jpg);
+    background-size: cover;
+    background-position: top right;
+    padding-bottom: 100px;
+}
 
+.education p {
+    width: 60%;
+}
 
 /* Contact info
 --------------------------------------*/
 footer {
     background: #343434;
     color: #F7FFF7;
-    text-align: center;
 }
 
 .contact-list {
     list-style-type: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
+    padding: 0;    
 }
 
 .contact-list a {
     padding: 15px;
     display: inline-block;
+
+}
+
+/* Responsive
+--------------------------------------*/
+
+@media screen and (min-width: 900px) {
+    header, footer {
+        text-align: center;
+    }
+    .project-item img {
+        float: left;
+        margin-right: 20px;
+    }
+    .job-item {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 25px;
+    }
+    .contact-list {
+        display: flex;
+        justify-content: center;
+
+    }
+}
+
+@media screen and (max-width: 899px) {
+    h1 {
+        font-size: 45px;
+        margin-bottom: 20px;
+    }
+    h1, h2 {
+        line-height: 1;
+    }
+
+    .contact-list a {
+        padding: 5px;
+    }
 }
